@@ -5,15 +5,15 @@ public class PiTri {
             System.out.println("Введите количество пифагоровых троек для вывода или введите три числа для проверки.");
             return;
         }
-        if(args.length == 1){ //вывести N троек
-            int N = Integer.parseInt(args[0]);
+        if(args.length == 1){ //вывести Num троек
+            int Num = Integer.parseInt(args[0]);
             int a = 1;
             int i = 0;
-            while (i < N && a < 1000){
+            while (i < Num && a < 1000){
                 int b = 1;
-                while (i < N && b < 1000) {
+                while (i < Num && b < 1000) {
                     int c = 1;
-                    while (i < N && c < 1000){
+                    while (i < Num && c < 1000){
                         if(checkTriple(a, b, c)){
                             System.out.println("Числа " + a + ", " + b + ", " + c + " являются пифагоровой тройкой");
                             i++;
